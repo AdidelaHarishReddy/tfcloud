@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Sleep for 60 Seconds') {
+            steps {
+                echo 'Sleeping for 60 seconds...'
+                sleep time: 60, unit: 'SECONDS'
+                echo 'Sleep completed.'
+            }
+        }
+    }
+}
